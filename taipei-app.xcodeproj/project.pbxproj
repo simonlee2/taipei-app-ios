@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F460CE631EB2EB34008D157E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460CE621EB2EB34008D157E /* AppDelegate.swift */; };
+		F460CE651EB2EB34008D157E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460CE641EB2EB34008D157E /* ViewController.swift */; };
+		F460CE681EB2EB34008D157E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F460CE661EB2EB34008D157E /* Main.storyboard */; };
+		F460CE6A1EB2EB34008D157E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F460CE691EB2EB34008D157E /* Assets.xcassets */; };
+		F460CE6D1EB2EB34008D157E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F460CE6B1EB2EB34008D157E /* LaunchScreen.storyboard */; };
+		F460CE781EB2EB34008D157E /* taipei_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460CE771EB2EB34008D157E /* taipei_appTests.swift */; };
+		F460CE831EB2EB34008D157E /* taipei_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460CE821EB2EB34008D157E /* taipei_appUITests.swift */; };
+		F460CE941EB30964008D157E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE911EB30964008D157E /* Alamofire.framework */; };
+		F460CE951EB30964008D157E /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE921EB30964008D157E /* PromiseKit.framework */; };
+		F460CE961EB30964008D157E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE931EB30964008D157E /* SwiftyJSON.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F460CE741EB2EB34008D157E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F460CE571EB2EB34008D157E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F460CE5E1EB2EB34008D157E;
+			remoteInfo = "taipei-app";
+		};
+		F460CE7F1EB2EB34008D157E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F460CE571EB2EB34008D157E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F460CE5E1EB2EB34008D157E;
+			remoteInfo = "taipei-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F460CE5F1EB2EB34008D157E /* taipei-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taipei-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F460CE621EB2EB34008D157E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F460CE641EB2EB34008D157E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F460CE671EB2EB34008D157E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F460CE691EB2EB34008D157E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F460CE6C1EB2EB34008D157E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F460CE6E1EB2EB34008D157E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F460CE731EB2EB34008D157E /* taipei-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "taipei-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F460CE771EB2EB34008D157E /* taipei_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taipei_appTests.swift; sourceTree = "<group>"; };
+		F460CE791EB2EB34008D157E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F460CE7E1EB2EB34008D157E /* taipei-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "taipei-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F460CE821EB2EB34008D157E /* taipei_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taipei_appUITests.swift; sourceTree = "<group>"; };
+		F460CE841EB2EB34008D157E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F460CE911EB30964008D157E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		F460CE921EB30964008D157E /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		F460CE931EB30964008D157E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F460CE5C1EB2EB34008D157E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460CE941EB30964008D157E /* Alamofire.framework in Frameworks */,
+				F460CE951EB30964008D157E /* PromiseKit.framework in Frameworks */,
+				F460CE961EB30964008D157E /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F460CE701EB2EB34008D157E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F460CE7B1EB2EB34008D157E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F460CE561EB2EB34008D157E = {
+			isa = PBXGroup;
+			children = (
+				F460CE611EB2EB34008D157E /* taipei-app */,
+				F460CE761EB2EB34008D157E /* taipei-appTests */,
+				F460CE811EB2EB34008D157E /* taipei-appUITests */,
+				F460CE601EB2EB34008D157E /* Products */,
+				F460CE901EB30963008D157E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F460CE601EB2EB34008D157E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F460CE5F1EB2EB34008D157E /* taipei-app.app */,
+				F460CE731EB2EB34008D157E /* taipei-appTests.xctest */,
+				F460CE7E1EB2EB34008D157E /* taipei-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F460CE611EB2EB34008D157E /* taipei-app */ = {
+			isa = PBXGroup;
+			children = (
+				F460CE621EB2EB34008D157E /* AppDelegate.swift */,
+				F460CE641EB2EB34008D157E /* ViewController.swift */,
+				F460CE661EB2EB34008D157E /* Main.storyboard */,
+				F460CE691EB2EB34008D157E /* Assets.xcassets */,
+				F460CE6B1EB2EB34008D157E /* LaunchScreen.storyboard */,
+				F460CE6E1EB2EB34008D157E /* Info.plist */,
+			);
+			path = "taipei-app";
+			sourceTree = "<group>";
+		};
+		F460CE761EB2EB34008D157E /* taipei-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				F460CE771EB2EB34008D157E /* taipei_appTests.swift */,
+				F460CE791EB2EB34008D157E /* Info.plist */,
+			);
+			path = "taipei-appTests";
+			sourceTree = "<group>";
+		};
+		F460CE811EB2EB34008D157E /* taipei-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F460CE821EB2EB34008D157E /* taipei_appUITests.swift */,
+				F460CE841EB2EB34008D157E /* Info.plist */,
+			);
+			path = "taipei-appUITests";
+			sourceTree = "<group>";
+		};
+		F460CE901EB30963008D157E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F460CE911EB30964008D157E /* Alamofire.framework */,
+				F460CE921EB30964008D157E /* PromiseKit.framework */,
+				F460CE931EB30964008D157E /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F460CE5E1EB2EB34008D157E /* taipei-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F460CE871EB2EB34008D157E /* Build configuration list for PBXNativeTarget "taipei-app" */;
+			buildPhases = (
+				F460CE5B1EB2EB34008D157E /* Sources */,
+				F460CE5C1EB2EB34008D157E /* Frameworks */,
+				F460CE5D1EB2EB34008D157E /* Resources */,
+				F460CE971EB30974008D157E /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "taipei-app";
+			productName = "taipei-app";
+			productReference = F460CE5F1EB2EB34008D157E /* taipei-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F460CE721EB2EB34008D157E /* taipei-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F460CE8A1EB2EB34008D157E /* Build configuration list for PBXNativeTarget "taipei-appTests" */;
+			buildPhases = (
+				F460CE6F1EB2EB34008D157E /* Sources */,
+				F460CE701EB2EB34008D157E /* Frameworks */,
+				F460CE711EB2EB34008D157E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F460CE751EB2EB34008D157E /* PBXTargetDependency */,
+			);
+			name = "taipei-appTests";
+			productName = "taipei-appTests";
+			productReference = F460CE731EB2EB34008D157E /* taipei-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F460CE7D1EB2EB34008D157E /* taipei-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F460CE8D1EB2EB34008D157E /* Build configuration list for PBXNativeTarget "taipei-appUITests" */;
+			buildPhases = (
+				F460CE7A1EB2EB34008D157E /* Sources */,
+				F460CE7B1EB2EB34008D157E /* Frameworks */,
+				F460CE7C1EB2EB34008D157E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F460CE801EB2EB34008D157E /* PBXTargetDependency */,
+			);
+			name = "taipei-appUITests";
+			productName = "taipei-appUITests";
+			productReference = F460CE7E1EB2EB34008D157E /* taipei-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F460CE571EB2EB34008D157E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Simon Lee";
+				TargetAttributes = {
+					F460CE5E1EB2EB34008D157E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = T3LQ95726F;
+						ProvisioningStyle = Automatic;
+					};
+					F460CE721EB2EB34008D157E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = T3LQ95726F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F460CE5E1EB2EB34008D157E;
+					};
+					F460CE7D1EB2EB34008D157E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = T3LQ95726F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F460CE5E1EB2EB34008D157E;
+					};
+				};
+			};
+			buildConfigurationList = F460CE5A1EB2EB34008D157E /* Build configuration list for PBXProject "taipei-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F460CE561EB2EB34008D157E;
+			productRefGroup = F460CE601EB2EB34008D157E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F460CE5E1EB2EB34008D157E /* taipei-app */,
+				F460CE721EB2EB34008D157E /* taipei-appTests */,
+				F460CE7D1EB2EB34008D157E /* taipei-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F460CE5D1EB2EB34008D157E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460CE6D1EB2EB34008D157E /* LaunchScreen.storyboard in Resources */,
+				F460CE6A1EB2EB34008D157E /* Assets.xcassets in Resources */,
+				F460CE681EB2EB34008D157E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F460CE711EB2EB34008D157E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F460CE7C1EB2EB34008D157E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F460CE971EB30974008D157E /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F460CE5B1EB2EB34008D157E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460CE651EB2EB34008D157E /* ViewController.swift in Sources */,
+				F460CE631EB2EB34008D157E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F460CE6F1EB2EB34008D157E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460CE781EB2EB34008D157E /* taipei_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F460CE7A1EB2EB34008D157E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460CE831EB2EB34008D157E /* taipei_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F460CE751EB2EB34008D157E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F460CE5E1EB2EB34008D157E /* taipei-app */;
+			targetProxy = F460CE741EB2EB34008D157E /* PBXContainerItemProxy */;
+		};
+		F460CE801EB2EB34008D157E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F460CE5E1EB2EB34008D157E /* taipei-app */;
+			targetProxy = F460CE7F1EB2EB34008D157E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F460CE661EB2EB34008D157E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F460CE671EB2EB34008D157E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F460CE6B1EB2EB34008D157E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F460CE6C1EB2EB34008D157E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F460CE851EB2EB34008D157E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F460CE861EB2EB34008D157E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F460CE881EB2EB34008D157E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "taipei-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.taipei-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F460CE891EB2EB34008D157E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "taipei-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.taipei-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F460CE8B1EB2EB34008D157E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				INFOPLIST_FILE = "taipei-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.taipei-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taipei-app.app/taipei-app";
+			};
+			name = Debug;
+		};
+		F460CE8C1EB2EB34008D157E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				INFOPLIST_FILE = "taipei-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.taipei-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taipei-app.app/taipei-app";
+			};
+			name = Release;
+		};
+		F460CE8E1EB2EB34008D157E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				INFOPLIST_FILE = "taipei-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.taipei-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "taipei-app";
+			};
+			name = Debug;
+		};
+		F460CE8F1EB2EB34008D157E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				INFOPLIST_FILE = "taipei-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "simonlee.taipei-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "taipei-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F460CE5A1EB2EB34008D157E /* Build configuration list for PBXProject "taipei-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F460CE851EB2EB34008D157E /* Debug */,
+				F460CE861EB2EB34008D157E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F460CE871EB2EB34008D157E /* Build configuration list for PBXNativeTarget "taipei-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F460CE881EB2EB34008D157E /* Debug */,
+				F460CE891EB2EB34008D157E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F460CE8A1EB2EB34008D157E /* Build configuration list for PBXNativeTarget "taipei-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F460CE8B1EB2EB34008D157E /* Debug */,
+				F460CE8C1EB2EB34008D157E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F460CE8D1EB2EB34008D157E /* Build configuration list for PBXNativeTarget "taipei-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F460CE8E1EB2EB34008D157E /* Debug */,
+				F460CE8F1EB2EB34008D157E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F460CE571EB2EB34008D157E /* Project object */;
+}
