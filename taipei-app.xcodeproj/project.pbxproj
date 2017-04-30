@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41430B11EB599E300BB9864 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41430B01EB599E300BB9864 /* Mapbox.framework */; };
 		F460CE631EB2EB34008D157E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460CE621EB2EB34008D157E /* AppDelegate.swift */; };
 		F460CE651EB2EB34008D157E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460CE641EB2EB34008D157E /* ViewController.swift */; };
 		F460CE681EB2EB34008D157E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F460CE661EB2EB34008D157E /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F41430B01EB599E300BB9864 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 		F460CE5F1EB2EB34008D157E /* taipei-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taipei-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F460CE621EB2EB34008D157E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F460CE641EB2EB34008D157E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41430B11EB599E300BB9864 /* Mapbox.framework in Frameworks */,
 				F460CE941EB30964008D157E /* Alamofire.framework in Frameworks */,
 				F460CE951EB30964008D157E /* PromiseKit.framework in Frameworks */,
 				F460CE961EB30964008D157E /* SwiftyJSON.framework in Frameworks */,
@@ -138,6 +141,7 @@
 		F460CE901EB30963008D157E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F41430B01EB599E300BB9864 /* Mapbox.framework */,
 				F460CE911EB30964008D157E /* Alamofire.framework */,
 				F460CE921EB30964008D157E /* PromiseKit.framework */,
 				F460CE931EB30964008D157E /* SwiftyJSON.framework */,
@@ -288,6 +292,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
 			);
 			name = Carthage;
 			outputPaths = (
