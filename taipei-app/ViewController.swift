@@ -20,14 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         mapView.delegate = self
-        let point = MGLPointAnnotation()
-        point.coordinate = CLLocationCoordinate2D(latitude: 25.0376486, longitude: 121.5617326)
-        point.title = "台北市政府"
-        point.subtitle = "台北市信義區市府路1號"
         
-        mapView.addAnnotation(point)
-        
-        _ = cafesJSON().then { json in
+        cafesJSON().then { json in
             self.processGeoJSON(json: json)
         }.then { cafes in
             cafes.map { cafe in
@@ -37,6 +31,8 @@ class ViewController: UIViewController {
             annotations.forEach { annotation in
                 self.mapView.addAnnotation(annotation)
             }
+        }.catch { error in
+            print(error)
         }
     }
     
@@ -51,7 +47,6 @@ class ViewController: UIViewController {
         return cafesRequest().responseJSON()
     }
     
-    @discardableResult
     func cafesJSON() -> Promise<JSON> {
         return cafes().then { data in
             return JSON(data)
@@ -86,7 +81,6 @@ extension Cafe {
         let properties = json["properties"]
         let lat = coordinate[1]
         let long = coordinate[0]
-        print("lat: \(lat), long: \(long)")
         
         self.id = properties["id"].intValue
         self.uuid = properties["uuid"].stringValue
@@ -97,5 +91,12 @@ extension Cafe {
 }
 
 extension ViewController: MGLMapViewDelegate {
+    func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
+        return nil
+    }
     
+    // Allow callout view to appear when an annotation is tapped.
+    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+        return true
+    }
 }
