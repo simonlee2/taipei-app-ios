@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
 import Alamofire
+import PromiseKit
+import PMKAlamofire
 
 public class API {
     
     public static var baseURL = "http://104.236.125.139:3000"
     
     public enum Endpoints {
-        case cafes
+        case cafes(String?, String?, String?)
         
         public var method: Alamofire.HTTPMethod {
             switch self {
@@ -29,6 +32,24 @@ public class API {
                 return "\(baseURL)/cafes"
             }
         }
-
+        
+        public var parameters: [String : Any] {
+            var parameters = ["format":"json"]
+            switch self {
+            case .cafes(let location, let radius, let limit):
+                parameters["location"] = location
+                parameters["radius"] = radius
+                parameters["limit"] = limit
+                break
+            }
+            return parameters
+        }
+    }
+    
+    public static func request(endpoint: API.Endpoints) -> DataRequest {
+        return Alamofire.request(
+            endpoint.path,
+            method: endpoint.method,
+            parameters: endpoint.parameters)
     }
 }
