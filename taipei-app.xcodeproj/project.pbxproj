@@ -10,6 +10,7 @@
 		F41430B11EB599E300BB9864 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41430B01EB599E300BB9864 /* Mapbox.framework */; };
 		F41430B31EB6DD3900BB9864 /* PMKAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41430B21EB6DD3900BB9864 /* PMKAlamofire.framework */; };
 		F41430B51EB776D400BB9864 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41430B41EB776D400BB9864 /* API.swift */; };
+		F41430B71EB9627900BB9864 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41430B61EB9627900BB9864 /* Cafe.swift */; };
 		F460CE631EB2EB34008D157E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460CE621EB2EB34008D157E /* AppDelegate.swift */; };
 		F460CE651EB2EB34008D157E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F460CE641EB2EB34008D157E /* ViewController.swift */; };
 		F460CE681EB2EB34008D157E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F460CE661EB2EB34008D157E /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		F41430B01EB599E300BB9864 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
 		F41430B21EB6DD3900BB9864 /* PMKAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKAlamofire.framework; path = Carthage/Build/iOS/PMKAlamofire.framework; sourceTree = "<group>"; };
 		F41430B41EB776D400BB9864 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F41430B61EB9627900BB9864 /* Cafe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		F460CE5F1EB2EB34008D157E /* taipei-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taipei-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F460CE621EB2EB34008D157E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F460CE641EB2EB34008D157E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				F460CE621EB2EB34008D157E /* AppDelegate.swift */,
 				F460CE641EB2EB34008D157E /* ViewController.swift */,
+				F41430B61EB9627900BB9864 /* Cafe.swift */,
 				F41430B41EB776D400BB9864 /* API.swift */,
 				F460CE661EB2EB34008D157E /* Main.storyboard */,
 				F460CE691EB2EB34008D157E /* Assets.xcassets */,
@@ -316,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41430B71EB9627900BB9864 /* Cafe.swift in Sources */,
 				F460CE651EB2EB34008D157E /* ViewController.swift in Sources */,
 				F41430B51EB776D400BB9864 /* API.swift in Sources */,
 				F460CE631EB2EB34008D157E /* AppDelegate.swift in Sources */,

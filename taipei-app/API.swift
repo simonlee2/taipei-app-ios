@@ -9,8 +9,6 @@
 import Foundation
 import SwiftyJSON
 import Alamofire
-import PromiseKit
-import PMKAlamofire
 
 public class API {
     
