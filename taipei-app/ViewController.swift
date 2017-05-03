@@ -15,41 +15,33 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     @IBOutlet var mapView: MGLMapView!
+    @IBOutlet weak var currentLocationButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mapView.delegate = self
         
-        cafesJSON().then { json in
+        addAnnotations(location: "@25.051,121.54654", radius: "600", limit: nil)
+        
+    }
+    
+    func addAnnotations(location: String?, radius: String?, limit: String?) {
+        API.request(endpoint: .cafes(location, radius, limit))
+            .responseJSON()
+            .then { JSON($0) }
+            .then { json in
             self.processGeoJSON(json: json)
-        }.then { cafes in
-            cafes.map { cafe in
-                self.annotationFromCafe(cafe: cafe)
-            }
-        }.then { annotations in
-            annotations.forEach { annotation in
-                self.mapView.addAnnotation(annotation)
-            }
-        }.catch { error in
-            print(error)
-        }
-    }
-    
-    func cafesRequest() -> DataRequest {
-        let baseURL = "http://104.236.125.139:3000"
-        let endpoint = "\(baseURL)/cafes"
-        let request = Alamofire.request(endpoint, method: .get)
-        return request
-    }
-    
-    func cafes() -> Promise<Any> {
-        return cafesRequest().responseJSON()
-    }
-    
-    func cafesJSON() -> Promise<JSON> {
-        return cafes().then { data in
-            return JSON(data)
+            }.then { cafes in
+                cafes.map { cafe in
+                    self.annotationFromCafe(cafe: cafe)
+                }
+            }.then { annotations in
+                annotations.forEach { annotation in
+                    self.mapView.addAnnotation(annotation)
+                }
+            }.catch { error in
+                print(error)
         }
     }
     
@@ -64,6 +56,20 @@ class ViewController: UIViewController {
         point.title = cafe.name
         point.subtitle = cafe.address
         return point
+    }
+    
+    @IBAction func currentLocationButtonPressed(_ sender: Any) {
+        guard let userLocation = mapView.userLocation else { return }
+        
+        mapView.setCenter(userLocation.coordinate, zoomLevel: 15, animated: true)
+        
+        if let annotations = mapView.annotations {
+            mapView.removeAnnotations(annotations)
+        }
+        
+        let locationString = "@\(userLocation.coordinate.latitude),\(userLocation.coordinate.longitude)"
+        
+        addAnnotations(location: locationString, radius: "600", limit: nil)
     }
 }
 
