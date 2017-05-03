@@ -34,9 +34,33 @@
                                     <action selector="currentLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8lR-ix-aKq"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04y-zn-V7G">
+                                <rect key="frame" x="37" y="59" width="300" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qet-Kl-asP">
+                                        <rect key="frame" x="20" y="0.0" width="260" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="260" id="mye-Uo-mqj"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LUc-H2-OUB"/>
+                                    <constraint firstItem="qet-Kl-asP" firstAttribute="centerX" secondItem="04y-zn-V7G" secondAttribute="centerX" id="NRC-Bz-sd4"/>
+                                    <constraint firstItem="qet-Kl-asP" firstAttribute="top" secondItem="04y-zn-V7G" secondAttribute="top" id="TrA-RP-rJu"/>
+                                    <constraint firstAttribute="width" constant="300" id="lLM-o4-h77"/>
+                                    <constraint firstAttribute="bottom" secondItem="qet-Kl-asP" secondAttribute="bottom" id="roI-z5-ZXX"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="04y-zn-V7G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72G-fq-LGc"/>
+                            <constraint firstItem="04y-zn-V7G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="qv2-tV-47D"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Kl-ef-FdD" secondAttribute="bottom" constant="87" id="rF9-4g-RIz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Kl-ef-FdD" secondAttribute="trailing" constant="21" id="tCu-AZ-NTh"/>
                         </constraints>
