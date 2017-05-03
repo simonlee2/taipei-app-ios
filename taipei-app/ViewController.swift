@@ -31,15 +31,11 @@ class ViewController: UIViewController {
             .responseJSON()
             .then { JSON($0) }
             .then { json in
-            self.processGeoJSON(json: json)
+                self.processGeoJSON(json: json)
             }.then { cafes in
-                cafes.map { cafe in
-                    self.annotationFromCafe(cafe: cafe)
-                }
+                cafes.map({$0.annotation})
             }.then { annotations in
-                annotations.forEach { annotation in
-                    self.mapView.addAnnotation(annotation)
-                }
+                annotations.forEach({self.mapView.addAnnotation($0)})
             }.catch { error in
                 print(error)
         }
@@ -48,14 +44,6 @@ class ViewController: UIViewController {
     func processGeoJSON(json: JSON) -> [Cafe] {
         let features: JSON = json["features"]
         return features.arrayValue.map({Cafe(fromJSON: $0)})
-    }
-    
-    func annotationFromCafe(cafe: Cafe) -> MGLPointAnnotation {
-        let point = MGLPointAnnotation()
-        point.coordinate = cafe.coordinate
-        point.title = cafe.name
-        point.subtitle = cafe.address
-        return point
     }
     
     @IBAction func currentLocationButtonPressed(_ sender: Any) {
@@ -94,6 +82,15 @@ extension Cafe {
         self.address = properties["address"].stringValue
         self.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
     }
+    
+    var annotation: MGLPointAnnotation {
+        let point = MGLPointAnnotation()
+        point.coordinate = coordinate
+        point.title = name
+        point.subtitle = address
+        return point
+    }
+    
 }
 
 extension ViewController: MGLMapViewDelegate {
