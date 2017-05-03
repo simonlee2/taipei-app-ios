@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Alamofire
+import CoreLocation
 import Mapbox
 import SwiftyJSON
 
