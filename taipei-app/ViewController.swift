@@ -15,14 +15,17 @@ import SwiftyJSON
 class ViewController: UIViewController {
     @IBOutlet var mapView: MGLMapView!
     @IBOutlet weak var currentLocationButton: UIButton!
+    var initialUserLocation: MGLUserLocation? {
+        didSet {
+            guard let initialUserLocation = initialUserLocation else { return }
+            setCenterAndSearch(mapView: mapView, userLocation: initialUserLocation, zoomLevel: 15, radius: "600", limit: nil, animated: true)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mapView.delegate = self
-        
-        addAnnotations(location: "@25.051,121.54654", radius: "600", limit: nil)
-        
     }
     
     func addAnnotations(location: String?, radius: String?, limit: String?) {
@@ -45,11 +48,9 @@ class ViewController: UIViewController {
         return features.arrayValue.map({Cafe(fromJSON: $0)})
     }
     
-    @IBAction func currentLocationButtonPressed(_ sender: Any) {
-        guard let userLocation = mapView.userLocation else { return }
-        
-        mapView.setCenter(userLocation.coordinate, zoomLevel: 15, animated: true)
-        
+    func setCenterAndSearch(mapView: MGLMapView, userLocation: MGLUserLocation, zoomLevel: Double, radius: String?, limit: String?, animated: Bool) {
+        mapView.setCenter(userLocation.coordinate, zoomLevel: zoomLevel, animated: animated)
+     
         if let annotations = mapView.annotations {
             mapView.removeAnnotations(annotations)
         }
@@ -57,6 +58,12 @@ class ViewController: UIViewController {
         let locationString = "@\(userLocation.coordinate.latitude),\(userLocation.coordinate.longitude)"
         
         addAnnotations(location: locationString, radius: "600", limit: nil)
+    }
+    
+    @IBAction func currentLocationButtonPressed(_ sender: Any) {
+        guard let userLocation = mapView.userLocation else { return }
+        
+        setCenterAndSearch(mapView: mapView, userLocation: userLocation, zoomLevel: 15, radius: "600", limit: nil, animated: true)
     }
 }
 
@@ -68,5 +75,12 @@ extension ViewController: MGLMapViewDelegate {
     // Allow callout view to appear when an annotation is tapped.
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
+    }
+    
+    func mapView(_ mapView: MGLMapView, didUpdate userLocation: MGLUserLocation?) {
+        if initialUserLocation == nil {
+            guard let userLocation = userLocation else { return }
+            initialUserLocation = userLocation
+        }
     }
 }

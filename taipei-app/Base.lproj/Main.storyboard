@@ -66,7 +66,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="zoomLevel">
-                                <real key="value" value="13"/>
+                                <real key="value" value="11"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="latitude">
                                 <real key="value" value="25.078036900000001"/>
@@ -76,6 +76,7 @@
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v9"/>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="allowsRotating" value="NO"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
