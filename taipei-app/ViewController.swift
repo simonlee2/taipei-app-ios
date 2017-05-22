@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var initialUserLocation: MGLUserLocation? {
         didSet {
             guard let initialUserLocation = initialUserLocation else { return }
-            setCenterAndSearch(mapView: mapView, userLocation: initialUserLocation, zoomLevel: 15, radius: "600", limit: nil, animated: true)
+            setCenterAndSearch(mapView: mapView, userLocation: initialUserLocation, zoomLevel: 14, radius: "600", limit: nil, animated: true)
         }
     }
 
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     @IBAction func currentLocationButtonPressed(_ sender: Any) {
         guard let userLocation = mapView.userLocation else { return }
         
-        setCenterAndSearch(mapView: mapView, userLocation: userLocation, zoomLevel: 15, radius: "600", limit: nil, animated: true)
+        setCenterAndSearch(mapView: mapView, userLocation: userLocation, zoomLevel: 14, radius: "600", limit: nil, animated: true)
     }
 }
 
