@@ -61,6 +61,7 @@
 		F460CE911EB30964008D157E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F460CE921EB30964008D157E /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		F460CE931EB30964008D157E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		F4DA6D0E1ED2BE8C006129A3 /* taipei-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "taipei-app.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +118,7 @@
 		F460CE611EB2EB34008D157E /* taipei-app */ = {
 			isa = PBXGroup;
 			children = (
+				F4DA6D0E1ED2BE8C006129A3 /* taipei-app.entitlements */,
 				F460CE621EB2EB34008D157E /* AppDelegate.swift */,
 				F460CE641EB2EB34008D157E /* ViewController.swift */,
 				F41430B61EB9627900BB9864 /* Cafe.swift */,
@@ -230,6 +232,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = T3LQ95726F;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					F460CE721EB2EB34008D157E = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -476,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "taipei-app/taipei-app.entitlements";
 				DEVELOPMENT_TEAM = T3LQ95726F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "taipei-app/taipei-app.entitlements";
 				DEVELOPMENT_TEAM = T3LQ95726F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
