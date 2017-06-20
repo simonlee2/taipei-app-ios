@@ -67,22 +67,45 @@ extension Cafe {
     }
 }
 
-//class CafeAnnotation: MGLAnnotation {
-//    var id: Int
-//    var uuid: String
-//    var name: String
-//    var address: String
-//    var coordinate: CLLocationCoordinate2D
-//    
-//    var music: Double
-//    var socket: SocketAvailability
-//    var quiet: Double
-//    var seat: Double
-//    var url: String
-//    var wifi: Double
-//    var tasty: Double
-//    var limitedTime: Bool
-//    var standingDesk: Bool
-//    
-//    
-//}
+class CafeAnnotation: NSObject, MGLAnnotation {
+    let id: Int
+    let uuid: String
+    let name: String
+    let address: String
+    let coordinate: CLLocationCoordinate2D
+    
+    let music: Double
+    let socket: SocketAvailability
+    let quiet: Double
+    let seat: Double
+    let url: String
+    let wifi: Double
+    let tasty: Double
+    let limitedTime: Bool
+    let standingDesk: Bool
+    
+    init(withCafe cafe: Cafe) {
+        self.id = cafe.id
+        self.uuid = cafe.uuid
+        self.name = cafe.name
+        self.address = cafe.address
+        self.coordinate = cafe.coordinate
+        self.music = cafe.music
+        self.socket = cafe.socket
+        self.quiet = cafe.quiet
+        self.seat = cafe.seat
+        self.url = cafe.url
+        self.wifi = cafe.wifi
+        self.tasty = cafe.tasty
+        self.limitedTime = cafe.limitedTime
+        self.standingDesk = cafe.standingDesk
+    }
+    
+    var title: String? {
+        return name
+    }
+    
+    var subtitle: String? {
+        return address
+    }
+}

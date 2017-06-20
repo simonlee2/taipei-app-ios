@@ -10,13 +10,14 @@ import UIKit
 import Mapbox
 
 class CafeDetailViewController: UIViewController {
-    var annotation: MGLAnnotation? {
+    var annotation: CafeAnnotation?
+
+    @IBOutlet weak var nameLabel: UILabel!  {
         didSet {
-//            nameLabel.text = annotation?.title!
+            nameLabel.text = annotation?.title!
         }
     }
-
-    @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

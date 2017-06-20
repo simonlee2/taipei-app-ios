@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             .then { json in
                 self.processGeoJSON(json: json)
             }.then { cafes in
-                cafes.map({$0.annotation})
+                cafes.map({CafeAnnotation(withCafe: $0)})
             }.then { annotations in
                 annotations.forEach({self.mapView.addAnnotation($0)})
             }.catch { error in
@@ -69,7 +69,6 @@ class ViewController: UIViewController {
 
 extension ViewController: MGLMapViewDelegate {
     func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
-        guard annotation is MGLPointAnnotation else { return nil }
         
         let reuseIdentifier = "basic"
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
@@ -125,6 +124,7 @@ extension ViewController: UIViewControllerPreviewingDelegate {
     
     func viewControllerForAnnotation(annotation: MGLAnnotation) -> CafeDetailViewController? {
         let controller = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CafeDetailViewController") as! CafeDetailViewController
+        guard let annotation = annotation as? CafeAnnotation else { return nil }
         controller.annotation = annotation
         return controller
     }
