@@ -21,6 +21,8 @@
 		F460CE941EB30964008D157E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE911EB30964008D157E /* Alamofire.framework */; };
 		F460CE951EB30964008D157E /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE921EB30964008D157E /* PromiseKit.framework */; };
 		F460CE961EB30964008D157E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE931EB30964008D157E /* SwiftyJSON.framework */; };
+		F4C9DBF21EF502CC00C65E30 /* taipei.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F4C9DBF11EF502CC00C65E30 /* taipei.gpx */; };
+		F4C9DBF41EF50C1600C65E30 /* CafeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9DBF31EF50C1600C65E30 /* CafeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		F460CE911EB30964008D157E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F460CE921EB30964008D157E /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		F460CE931EB30964008D157E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		F4C9DBF11EF502CC00C65E30 /* taipei.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taipei.gpx; sourceTree = "<group>"; };
+		F4C9DBF31EF50C1600C65E30 /* CafeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeDetailViewController.swift; sourceTree = "<group>"; };
 		F4DA6D0E1ED2BE8C006129A3 /* taipei-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "taipei-app.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +101,7 @@
 		F460CE561EB2EB34008D157E = {
 			isa = PBXGroup;
 			children = (
+				F4C9DBF11EF502CC00C65E30 /* taipei.gpx */,
 				F460CE611EB2EB34008D157E /* taipei-app */,
 				F460CE761EB2EB34008D157E /* taipei-appTests */,
 				F460CE811EB2EB34008D157E /* taipei-appUITests */,
@@ -121,6 +126,7 @@
 				F4DA6D0E1ED2BE8C006129A3 /* taipei-app.entitlements */,
 				F460CE621EB2EB34008D157E /* AppDelegate.swift */,
 				F460CE641EB2EB34008D157E /* ViewController.swift */,
+				F4C9DBF31EF50C1600C65E30 /* CafeDetailViewController.swift */,
 				F41430B61EB9627900BB9864 /* Cafe.swift */,
 				F41430B41EB776D400BB9864 /* API.swift */,
 				F460CE661EB2EB34008D157E /* Main.storyboard */,
@@ -280,6 +286,7 @@
 				F460CE6D1EB2EB34008D157E /* LaunchScreen.storyboard in Resources */,
 				F460CE6A1EB2EB34008D157E /* Assets.xcassets in Resources */,
 				F460CE681EB2EB34008D157E /* Main.storyboard in Resources */,
+				F4C9DBF21EF502CC00C65E30 /* taipei.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +337,7 @@
 				F460CE651EB2EB34008D157E /* ViewController.swift in Sources */,
 				F41430B51EB776D400BB9864 /* API.swift in Sources */,
 				F460CE631EB2EB34008D157E /* AppDelegate.swift in Sources */,
+				F4C9DBF41EF50C1600C65E30 /* CafeDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

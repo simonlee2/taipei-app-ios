@@ -69,7 +69,23 @@ class ViewController: UIViewController {
 
 extension ViewController: MGLMapViewDelegate {
     func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
-        return nil
+        guard annotation is MGLPointAnnotation else { return nil }
+        
+        let reuseIdentifier = "basic"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
+        
+        // If there’s no reusable annotation view available, initialize a new one.
+        if annotationView == nil {
+            annotationView = MGLAnnotationView(reuseIdentifier: reuseIdentifier)
+            annotationView?.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            annotationView?.layer.cornerRadius = (annotationView?.frame.size.width)! / 2
+            annotationView?.layer.borderWidth = 4.0
+            annotationView?.layer.borderColor = UIColor.white.cgColor
+            annotationView!.backgroundColor = UIColor(red:0.03, green:0.80, blue:0.69, alpha:1.0)
+        }
+        
+        registerForPreviewing(with: self, sourceView: annotationView!)
+        return annotationView
     }
     
     // Allow callout view to appear when an annotation is tapped.
@@ -82,5 +98,34 @@ extension ViewController: MGLMapViewDelegate {
             guard let userLocation = userLocation else { return }
             initialUserLocation = userLocation
         }
+    }
+    
+    func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
+        guard let controller = viewControllerForAnnotation(annotation: annotation) else { return }
+        navigationController?.pushViewController(controller, animated: true)
+    }
+}
+
+extension ViewController: UIViewControllerPreviewingDelegate {
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+         navigationController?.pushViewController(viewControllerToCommit, animated: true)
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        guard let annotationView = previewingContext.sourceView as? MGLAnnotationView else {
+             return nil
+        }
+        
+        guard let annotation = annotationView.annotation else {
+             return nil
+        }
+        
+        return viewControllerForAnnotation(annotation: annotation)
+    }
+    
+    func viewControllerForAnnotation(annotation: MGLAnnotation) -> CafeDetailViewController? {
+        let controller = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CafeDetailViewController") as! CafeDetailViewController
+        controller.annotation = annotation
+        return controller
     }
 }
