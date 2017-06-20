@@ -99,7 +99,14 @@ extension ViewController: MGLMapViewDelegate {
         }
     }
     
-    func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
+    func mapView(_ mapView: MGLMapView, rightCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
+        return UIButton(type: .detailDisclosure)
+    }
+    
+    func mapView(_ mapView: MGLMapView, annotation: MGLAnnotation, calloutAccessoryControlTapped control: UIControl) {
+        
+        mapView.deselectAnnotation(annotation, animated: false)
+        
         guard let controller = viewControllerForAnnotation(annotation: annotation) else { return }
         navigationController?.pushViewController(controller, animated: true)
     }
