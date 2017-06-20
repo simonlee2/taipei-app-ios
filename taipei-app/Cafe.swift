@@ -18,21 +18,21 @@ enum SocketAvailability: String {
 }
 
 struct Cafe {
-    var id: Int
-    var uuid: String
-    var name: String
-    var address: String
-    var coordinate: CLLocationCoordinate2D
+    let id: Int
+    let uuid: String
+    let name: String
+    let address: String
+    let coordinate: CLLocationCoordinate2D
     
-    var music: Double
-    var socket: SocketAvailability
-    var quiet: Double
-    var seat: Double
-    var url: String
-    var wifi: Double
-    var tasty: Double
-    var limitedTime: Bool
-    var standingDesk: Bool
+    let music: Double
+    let socket: SocketAvailability
+    let quiet: Double
+    let seat: Double
+    let url: String
+    let wifi: Double
+    let tasty: Double
+    let limitedTime: Bool
+    let standingDesk: Bool
 }
 
 extension Cafe {
@@ -66,3 +66,23 @@ extension Cafe {
         return point
     }
 }
+
+//class CafeAnnotation: MGLAnnotation {
+//    var id: Int
+//    var uuid: String
+//    var name: String
+//    var address: String
+//    var coordinate: CLLocationCoordinate2D
+//    
+//    var music: Double
+//    var socket: SocketAvailability
+//    var quiet: Double
+//    var seat: Double
+//    var url: String
+//    var wifi: Double
+//    var tasty: Double
+//    var limitedTime: Bool
+//    var standingDesk: Bool
+//    
+//    
+//}
