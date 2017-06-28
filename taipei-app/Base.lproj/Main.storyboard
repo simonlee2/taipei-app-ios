@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--台北-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="taipei_app" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,7 +84,7 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="allowsRotating" value="NO"/>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" id="lMZ-Ui-c3w"/>
+                    <navigationItem key="navigationItem" title="台北" id="lMZ-Ui-c3w"/>
                     <connections>
                         <outlet property="currentLocationButton" destination="1Kl-ef-FdD" id="7ho-Wf-VGs"/>
                         <outlet property="mapView" destination="8bC-Xf-vdC" id="UwJ-jB-Puh"/>
@@ -115,7 +115,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jlv-Ks-Qrx" id="BDy-oZ-q6t">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-1y-EG0">

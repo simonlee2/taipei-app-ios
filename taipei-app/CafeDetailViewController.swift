@@ -17,6 +17,7 @@ class CafeDetailViewController: UIViewController {
         super.viewDidLoad()
 
         tableView.dataSource = self
+        self.title = annotation?.title
     }
 }
 
@@ -27,8 +28,6 @@ extension CafeDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ratingCell = tableView.dequeueReusableCell(withIdentifier: "ratingCell", for: indexPath) as! RatingTableViewCell
-        
-        ratingCell.nameLabel.text = annotation?.title
         
         return ratingCell
     }
