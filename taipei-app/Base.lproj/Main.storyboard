@@ -107,69 +107,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-1y-EG0">
-                                <rect key="frame" x="36" y="84" width="303" height="563"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woj-ZT-r4E">
-                                        <rect key="frame" x="132.5" y="0.0" width="38.5" height="22.5"/>
-                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYn-nL-xtE">
-                                        <rect key="frame" x="121.5" y="90" width="60" height="22.5"/>
-                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通常有位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASP-6k-DLq">
-                                        <rect key="frame" x="121.5" y="180" width="60" height="22.5"/>
-                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安靜程度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3F-ih-9TD">
-                                        <rect key="frame" x="121.5" y="270.5" width="60" height="22.5"/>
-                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡好喝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKx-rW-x4y">
-                                        <rect key="frame" x="121.5" y="360.5" width="60" height="22.5"/>
-                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="價格便宜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd3-E3-gs4">
-                                        <rect key="frame" x="121.5" y="450.5" width="60" height="22.5"/>
-                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有插座" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEX-OQ-icT">
-                                        <rect key="frame" x="129" y="540.5" width="45" height="22.5"/>
-                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-oZ-5JW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ratingCell" id="jlv-Ks-Qrx" customClass="RatingTableViewCell" customModule="taipei_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jlv-Ks-Qrx" id="BDy-oZ-q6t">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-1y-EG0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woj-ZT-r4E">
+                                                            <rect key="frame" x="168.5" y="0.0" width="38.5" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYn-nL-xtE">
+                                                            <rect key="frame" x="157.5" y="23" width="60" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通常有位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASP-6k-DLq">
+                                                            <rect key="frame" x="157.5" y="45.5" width="60" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安靜程度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3F-ih-9TD">
+                                                            <rect key="frame" x="157.5" y="68.5" width="60" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡好喝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKx-rW-x4y">
+                                                            <rect key="frame" x="157.5" y="91.5" width="60" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="價格便宜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd3-E3-gs4">
+                                                            <rect key="frame" x="157.5" y="114" width="60" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有插座" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEX-OQ-icT">
+                                                            <rect key="frame" x="165" y="137" width="45" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="eWM-1y-EG0" secondAttribute="bottom" id="33Z-Pg-KgM"/>
+                                                <constraint firstItem="eWM-1y-EG0" firstAttribute="leading" secondItem="BDy-oZ-q6t" secondAttribute="leading" id="nR7-HH-7PQ"/>
+                                                <constraint firstItem="eWM-1y-EG0" firstAttribute="top" secondItem="BDy-oZ-q6t" secondAttribute="top" id="rpl-0x-OTI"/>
+                                                <constraint firstAttribute="trailing" secondItem="eWM-1y-EG0" secondAttribute="trailing" id="znk-02-DcN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="woj-ZT-r4E" id="Eus-3G-BwA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eWM-1y-EG0" firstAttribute="leading" secondItem="QGX-7Q-52A" secondAttribute="leadingMargin" constant="20" id="4rl-dX-n0g"/>
-                            <constraint firstItem="eWM-1y-EG0" firstAttribute="top" secondItem="erX-jb-eZb" secondAttribute="bottom" constant="20" id="L1N-b8-FXz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eWM-1y-EG0" secondAttribute="trailing" constant="20" id="gIf-jK-j0f"/>
-                            <constraint firstItem="OSY-gL-ony" firstAttribute="top" secondItem="eWM-1y-EG0" secondAttribute="bottom" constant="20" id="yeR-tb-Pl0"/>
+                            <constraint firstItem="OSY-gL-ony" firstAttribute="top" secondItem="cgw-oZ-5JW" secondAttribute="bottom" id="3QD-ue-hfg"/>
+                            <constraint firstItem="cgw-oZ-5JW" firstAttribute="top" secondItem="QGX-7Q-52A" secondAttribute="top" id="JwA-FF-544"/>
+                            <constraint firstAttribute="trailing" secondItem="cgw-oZ-5JW" secondAttribute="trailing" id="hJZ-l2-D65"/>
+                            <constraint firstItem="cgw-oZ-5JW" firstAttribute="leading" secondItem="QGX-7Q-52A" secondAttribute="leading" id="wcT-he-CKi"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="woj-ZT-r4E" id="rl2-Br-vGi"/>
+                        <outlet property="tableView" destination="cgw-oZ-5JW" id="aqs-DS-gut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDy-kl-1lT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855.2" y="38.23088455772114"/>
+            <point key="canvasLocation" x="1809" y="37"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EDC-yy-cOc">

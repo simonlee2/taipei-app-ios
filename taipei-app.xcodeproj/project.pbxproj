@@ -38,6 +38,7 @@
 		F4B0FA1B1F00F783006F2B7B /* NotoSansCJKtc-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA0A1F00F783006F2B7B /* NotoSansCJKtc-Thin.otf */; };
 		F4B0FA1C1F00F783006F2B7B /* NotoSansMonoCJKtc-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA0B1F00F783006F2B7B /* NotoSansMonoCJKtc-Bold.otf */; };
 		F4B0FA1D1F00F783006F2B7B /* NotoSansMonoCJKtc-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA0C1F00F783006F2B7B /* NotoSansMonoCJKtc-Regular.otf */; };
+		F4B0FA201F0338AE006F2B7B /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B0FA1F1F0338AE006F2B7B /* RatingTableViewCell.swift */; };
 		F4C9DBF21EF502CC00C65E30 /* taipei.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F4C9DBF11EF502CC00C65E30 /* taipei.gpx */; };
 		F4C9DBF41EF50C1600C65E30 /* CafeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9DBF31EF50C1600C65E30 /* CafeDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		F4B0FA0A1F00F783006F2B7B /* NotoSansCJKtc-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKtc-Thin.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansCJKtc-Thin.otf"; sourceTree = "<group>"; };
 		F4B0FA0B1F00F783006F2B7B /* NotoSansMonoCJKtc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansMonoCJKtc-Bold.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansMonoCJKtc-Bold.otf"; sourceTree = "<group>"; };
 		F4B0FA0C1F00F783006F2B7B /* NotoSansMonoCJKtc-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansMonoCJKtc-Regular.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansMonoCJKtc-Regular.otf"; sourceTree = "<group>"; };
+		F4B0FA1F1F0338AE006F2B7B /* RatingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
 		F4C9DBF11EF502CC00C65E30 /* taipei.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taipei.gpx; sourceTree = "<group>"; };
 		F4C9DBF31EF50C1600C65E30 /* CafeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeDetailViewController.swift; sourceTree = "<group>"; };
 		F4DA6D0E1ED2BE8C006129A3 /* taipei-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "taipei-app.entitlements"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				F460CE621EB2EB34008D157E /* AppDelegate.swift */,
 				F460CE641EB2EB34008D157E /* ViewController.swift */,
 				F4C9DBF31EF50C1600C65E30 /* CafeDetailViewController.swift */,
+				F4B0FA1F1F0338AE006F2B7B /* RatingTableViewCell.swift */,
 				F41430B61EB9627900BB9864 /* Cafe.swift */,
 				F41430B41EB776D400BB9864 /* API.swift */,
 				F460CE661EB2EB34008D157E /* Main.storyboard */,
@@ -411,6 +414,7 @@
 			files = (
 				F41430B71EB9627900BB9864 /* Cafe.swift in Sources */,
 				F460CE651EB2EB34008D157E /* ViewController.swift in Sources */,
+				F4B0FA201F0338AE006F2B7B /* RatingTableViewCell.swift in Sources */,
 				F41430B51EB776D400BB9864 /* API.swift in Sources */,
 				F460CE631EB2EB34008D157E /* AppDelegate.swift in Sources */,
 				F4C9DBF41EF50C1600C65E30 /* CafeDetailViewController.swift in Sources */,
