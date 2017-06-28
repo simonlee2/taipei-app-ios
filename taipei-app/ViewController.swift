@@ -126,7 +126,10 @@ extension ViewController: UIViewControllerPreviewingDelegate {
              return nil
         }
         
-        return viewControllerForAnnotation(annotation: annotation)
+        let controller = viewControllerForAnnotation(annotation: annotation)
+        controller?.preferredContentSize = CGSize(width: 300, height: 200)
+        
+        return controller
     }
     
     func viewControllerForAnnotation(annotation: MGLAnnotation) -> CafeDetailViewController? {

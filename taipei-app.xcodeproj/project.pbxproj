@@ -21,6 +21,23 @@
 		F460CE941EB30964008D157E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE911EB30964008D157E /* Alamofire.framework */; };
 		F460CE951EB30964008D157E /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE921EB30964008D157E /* PromiseKit.framework */; };
 		F460CE961EB30964008D157E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE931EB30964008D157E /* SwiftyJSON.framework */; };
+		F4B0FA0D1F00F783006F2B7B /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0F9FC1F00F783006F2B7B /* NotoSans-Bold.ttf */; };
+		F4B0FA0E1F00F783006F2B7B /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0F9FD1F00F783006F2B7B /* NotoSans-BoldItalic.ttf */; };
+		F4B0FA0F1F00F783006F2B7B /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0F9FE1F00F783006F2B7B /* NotoSans-Italic.ttf */; };
+		F4B0FA101F00F783006F2B7B /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0F9FF1F00F783006F2B7B /* NotoSans-Regular.ttf */; };
+		F4B0FA111F00F783006F2B7B /* NotoSansUI-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA001F00F783006F2B7B /* NotoSansUI-Bold.ttf */; };
+		F4B0FA121F00F783006F2B7B /* NotoSansUI-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA011F00F783006F2B7B /* NotoSansUI-BoldItalic.ttf */; };
+		F4B0FA131F00F783006F2B7B /* NotoSansUI-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA021F00F783006F2B7B /* NotoSansUI-Italic.ttf */; };
+		F4B0FA141F00F783006F2B7B /* NotoSansUI-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA031F00F783006F2B7B /* NotoSansUI-Regular.ttf */; };
+		F4B0FA151F00F783006F2B7B /* NotoSansCJKtc-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA041F00F783006F2B7B /* NotoSansCJKtc-Black.otf */; };
+		F4B0FA161F00F783006F2B7B /* NotoSansCJKtc-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA051F00F783006F2B7B /* NotoSansCJKtc-Bold.otf */; };
+		F4B0FA171F00F783006F2B7B /* NotoSansCJKtc-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA061F00F783006F2B7B /* NotoSansCJKtc-DemiLight.otf */; };
+		F4B0FA181F00F783006F2B7B /* NotoSansCJKtc-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA071F00F783006F2B7B /* NotoSansCJKtc-Light.otf */; };
+		F4B0FA191F00F783006F2B7B /* NotoSansCJKtc-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA081F00F783006F2B7B /* NotoSansCJKtc-Medium.otf */; };
+		F4B0FA1A1F00F783006F2B7B /* NotoSansCJKtc-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA091F00F783006F2B7B /* NotoSansCJKtc-Regular.otf */; };
+		F4B0FA1B1F00F783006F2B7B /* NotoSansCJKtc-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA0A1F00F783006F2B7B /* NotoSansCJKtc-Thin.otf */; };
+		F4B0FA1C1F00F783006F2B7B /* NotoSansMonoCJKtc-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA0B1F00F783006F2B7B /* NotoSansMonoCJKtc-Bold.otf */; };
+		F4B0FA1D1F00F783006F2B7B /* NotoSansMonoCJKtc-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0FA0C1F00F783006F2B7B /* NotoSansMonoCJKtc-Regular.otf */; };
 		F4C9DBF21EF502CC00C65E30 /* taipei.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F4C9DBF11EF502CC00C65E30 /* taipei.gpx */; };
 		F4C9DBF41EF50C1600C65E30 /* CafeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9DBF31EF50C1600C65E30 /* CafeDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +80,23 @@
 		F460CE911EB30964008D157E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F460CE921EB30964008D157E /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		F460CE931EB30964008D157E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		F4B0F9FC1F00F783006F2B7B /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Bold.ttf"; path = "Resources/NotoSans-unhinted/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		F4B0F9FD1F00F783006F2B7B /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-BoldItalic.ttf"; path = "Resources/NotoSans-unhinted/NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F4B0F9FE1F00F783006F2B7B /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Italic.ttf"; path = "Resources/NotoSans-unhinted/NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		F4B0F9FF1F00F783006F2B7B /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "Resources/NotoSans-unhinted/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		F4B0FA001F00F783006F2B7B /* NotoSansUI-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansUI-Bold.ttf"; path = "Resources/NotoSans-unhinted/NotoSansUI-Bold.ttf"; sourceTree = "<group>"; };
+		F4B0FA011F00F783006F2B7B /* NotoSansUI-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansUI-BoldItalic.ttf"; path = "Resources/NotoSans-unhinted/NotoSansUI-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F4B0FA021F00F783006F2B7B /* NotoSansUI-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansUI-Italic.ttf"; path = "Resources/NotoSans-unhinted/NotoSansUI-Italic.ttf"; sourceTree = "<group>"; };
+		F4B0FA031F00F783006F2B7B /* NotoSansUI-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansUI-Regular.ttf"; path = "Resources/NotoSans-unhinted/NotoSansUI-Regular.ttf"; sourceTree = "<group>"; };
+		F4B0FA041F00F783006F2B7B /* NotoSansCJKtc-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKtc-Black.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansCJKtc-Black.otf"; sourceTree = "<group>"; };
+		F4B0FA051F00F783006F2B7B /* NotoSansCJKtc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKtc-Bold.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansCJKtc-Bold.otf"; sourceTree = "<group>"; };
+		F4B0FA061F00F783006F2B7B /* NotoSansCJKtc-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKtc-DemiLight.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansCJKtc-DemiLight.otf"; sourceTree = "<group>"; };
+		F4B0FA071F00F783006F2B7B /* NotoSansCJKtc-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKtc-Light.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansCJKtc-Light.otf"; sourceTree = "<group>"; };
+		F4B0FA081F00F783006F2B7B /* NotoSansCJKtc-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKtc-Medium.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansCJKtc-Medium.otf"; sourceTree = "<group>"; };
+		F4B0FA091F00F783006F2B7B /* NotoSansCJKtc-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKtc-Regular.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansCJKtc-Regular.otf"; sourceTree = "<group>"; };
+		F4B0FA0A1F00F783006F2B7B /* NotoSansCJKtc-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKtc-Thin.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansCJKtc-Thin.otf"; sourceTree = "<group>"; };
+		F4B0FA0B1F00F783006F2B7B /* NotoSansMonoCJKtc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansMonoCJKtc-Bold.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansMonoCJKtc-Bold.otf"; sourceTree = "<group>"; };
+		F4B0FA0C1F00F783006F2B7B /* NotoSansMonoCJKtc-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansMonoCJKtc-Regular.otf"; path = "Resources/NotoSansCJKtc-hinted/NotoSansMonoCJKtc-Regular.otf"; sourceTree = "<group>"; };
 		F4C9DBF11EF502CC00C65E30 /* taipei.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taipei.gpx; sourceTree = "<group>"; };
 		F4C9DBF31EF50C1600C65E30 /* CafeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeDetailViewController.swift; sourceTree = "<group>"; };
 		F4DA6D0E1ED2BE8C006129A3 /* taipei-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "taipei-app.entitlements"; sourceTree = "<group>"; };
@@ -123,6 +157,7 @@
 		F460CE611EB2EB34008D157E /* taipei-app */ = {
 			isa = PBXGroup;
 			children = (
+				F4B0FA1E1F00F789006F2B7B /* Resources */,
 				F4DA6D0E1ED2BE8C006129A3 /* taipei-app.entitlements */,
 				F460CE621EB2EB34008D157E /* AppDelegate.swift */,
 				F460CE641EB2EB34008D157E /* ViewController.swift */,
@@ -165,6 +200,30 @@
 				F460CE931EB30964008D157E /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4B0FA1E1F00F789006F2B7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4B0F9FC1F00F783006F2B7B /* NotoSans-Bold.ttf */,
+				F4B0F9FD1F00F783006F2B7B /* NotoSans-BoldItalic.ttf */,
+				F4B0F9FE1F00F783006F2B7B /* NotoSans-Italic.ttf */,
+				F4B0F9FF1F00F783006F2B7B /* NotoSans-Regular.ttf */,
+				F4B0FA001F00F783006F2B7B /* NotoSansUI-Bold.ttf */,
+				F4B0FA011F00F783006F2B7B /* NotoSansUI-BoldItalic.ttf */,
+				F4B0FA021F00F783006F2B7B /* NotoSansUI-Italic.ttf */,
+				F4B0FA031F00F783006F2B7B /* NotoSansUI-Regular.ttf */,
+				F4B0FA041F00F783006F2B7B /* NotoSansCJKtc-Black.otf */,
+				F4B0FA051F00F783006F2B7B /* NotoSansCJKtc-Bold.otf */,
+				F4B0FA061F00F783006F2B7B /* NotoSansCJKtc-DemiLight.otf */,
+				F4B0FA071F00F783006F2B7B /* NotoSansCJKtc-Light.otf */,
+				F4B0FA081F00F783006F2B7B /* NotoSansCJKtc-Medium.otf */,
+				F4B0FA091F00F783006F2B7B /* NotoSansCJKtc-Regular.otf */,
+				F4B0FA0A1F00F783006F2B7B /* NotoSansCJKtc-Thin.otf */,
+				F4B0FA0B1F00F783006F2B7B /* NotoSansMonoCJKtc-Bold.otf */,
+				F4B0FA0C1F00F783006F2B7B /* NotoSansMonoCJKtc-Regular.otf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +342,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B0FA1C1F00F783006F2B7B /* NotoSansMonoCJKtc-Bold.otf in Resources */,
+				F4B0FA0E1F00F783006F2B7B /* NotoSans-BoldItalic.ttf in Resources */,
+				F4B0FA161F00F783006F2B7B /* NotoSansCJKtc-Bold.otf in Resources */,
 				F460CE6D1EB2EB34008D157E /* LaunchScreen.storyboard in Resources */,
+				F4B0FA1B1F00F783006F2B7B /* NotoSansCJKtc-Thin.otf in Resources */,
+				F4B0FA191F00F783006F2B7B /* NotoSansCJKtc-Medium.otf in Resources */,
+				F4B0FA121F00F783006F2B7B /* NotoSansUI-BoldItalic.ttf in Resources */,
 				F460CE6A1EB2EB34008D157E /* Assets.xcassets in Resources */,
+				F4B0FA141F00F783006F2B7B /* NotoSansUI-Regular.ttf in Resources */,
+				F4B0FA171F00F783006F2B7B /* NotoSansCJKtc-DemiLight.otf in Resources */,
+				F4B0FA1D1F00F783006F2B7B /* NotoSansMonoCJKtc-Regular.otf in Resources */,
+				F4B0FA181F00F783006F2B7B /* NotoSansCJKtc-Light.otf in Resources */,
+				F4B0FA1A1F00F783006F2B7B /* NotoSansCJKtc-Regular.otf in Resources */,
+				F4B0FA151F00F783006F2B7B /* NotoSansCJKtc-Black.otf in Resources */,
 				F460CE681EB2EB34008D157E /* Main.storyboard in Resources */,
+				F4B0FA131F00F783006F2B7B /* NotoSansUI-Italic.ttf in Resources */,
+				F4B0FA101F00F783006F2B7B /* NotoSans-Regular.ttf in Resources */,
+				F4B0FA0F1F00F783006F2B7B /* NotoSans-Italic.ttf in Resources */,
+				F4B0FA0D1F00F783006F2B7B /* NotoSans-Bold.ttf in Resources */,
+				F4B0FA111F00F783006F2B7B /* NotoSansUI-Bold.ttf in Resources */,
 				F4C9DBF21EF502CC00C65E30 /* taipei.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

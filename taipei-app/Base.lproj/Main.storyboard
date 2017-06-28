@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKtc-DemiLight.otf">
+            <string>NotoSansCJKtc-DemiLight</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -103,23 +108,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-1y-EG0">
-                                <rect key="frame" x="36" y="40" width="303" height="427"/>
+                                <rect key="frame" x="36" y="84" width="303" height="563"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woj-ZT-r4E">
-                                        <rect key="frame" x="130.5" y="0.0" width="42" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="132.5" y="0.0" width="38.5" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYn-nL-xtE">
-                                        <rect key="frame" x="130.5" y="203.5" width="42" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYn-nL-xtE">
+                                        <rect key="frame" x="121.5" y="90" width="60" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEX-OQ-icT">
-                                        <rect key="frame" x="130.5" y="406.5" width="42" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通常有位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASP-6k-DLq">
+                                        <rect key="frame" x="121.5" y="180" width="60" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安靜程度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3F-ih-9TD">
+                                        <rect key="frame" x="121.5" y="270.5" width="60" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡好喝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKx-rW-x4y">
+                                        <rect key="frame" x="121.5" y="360.5" width="60" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="價格便宜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd3-E3-gs4">
+                                        <rect key="frame" x="121.5" y="450.5" width="60" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有插座" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEX-OQ-icT">
+                                        <rect key="frame" x="129" y="540.5" width="45" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -131,7 +160,7 @@
                             <constraint firstItem="eWM-1y-EG0" firstAttribute="leading" secondItem="QGX-7Q-52A" secondAttribute="leadingMargin" constant="20" id="4rl-dX-n0g"/>
                             <constraint firstItem="eWM-1y-EG0" firstAttribute="top" secondItem="erX-jb-eZb" secondAttribute="bottom" constant="20" id="L1N-b8-FXz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eWM-1y-EG0" secondAttribute="trailing" constant="20" id="gIf-jK-j0f"/>
-                            <constraint firstItem="OSY-gL-ony" firstAttribute="top" secondItem="eWM-1y-EG0" secondAttribute="bottom" constant="200" id="yeR-tb-Pl0"/>
+                            <constraint firstItem="OSY-gL-ony" firstAttribute="top" secondItem="eWM-1y-EG0" secondAttribute="bottom" constant="20" id="yeR-tb-Pl0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -147,7 +176,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E6O-iD-OBw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5K0-2O-rk1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5K0-2O-rk1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
