@@ -114,7 +114,14 @@ extension ViewController: MGLMapViewDelegate {
 
 extension ViewController: UIViewControllerPreviewingDelegate {
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
-         navigationController?.pushViewController(viewControllerToCommit, animated: true)
+        
+        if let navController = viewControllerToCommit as? UINavigationController,
+            let rootViewController = navController.viewControllers.first {
+            navigationController?.pushViewController(rootViewController, animated: true)
+        } else {
+            navigationController?.pushViewController(viewControllerToCommit, animated: true)
+        }
+        
     }
     
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
@@ -126,10 +133,14 @@ extension ViewController: UIViewControllerPreviewingDelegate {
              return nil
         }
         
-        let controller = viewControllerForAnnotation(annotation: annotation)
-        controller?.preferredContentSize = CGSize(width: 300, height: 200)
+        guard let controller = viewControllerForAnnotation(annotation: annotation) else {
+            return nil
+        }
         
-        return controller
+        controller.preferredContentSize = CGSize(width: 300, height: 200)
+        let navController = UINavigationController(rootViewController: controller)
+        
+        return navController
     }
     
     func viewControllerForAnnotation(annotation: MGLAnnotation) -> CafeDetailViewController? {
