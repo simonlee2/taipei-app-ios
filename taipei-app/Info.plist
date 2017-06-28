@@ -22,8 +22,12 @@
 	<true/>
 	<key>MGLMapboxAccessToken</key>
 	<string>pk.eyJ1Ijoic2ltb25sZWUiLCJhIjoiY2oyNDUxYnhpMDAxMzJxcGMwZDBzODdnZCJ9.rofpAHrIUOndpVGFQwBDow</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Used to locate points of interest near you</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Determine your current location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Used to locate points of interest near you</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NotoSans-Bold.ttf</string>
