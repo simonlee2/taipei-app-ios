@@ -137,7 +137,7 @@ extension ViewController: UIViewControllerPreviewingDelegate {
             return nil
         }
         
-        controller.preferredContentSize = CGSize(width: 300, height: 200)
+        controller.preferredContentSize = CGSize(width: 0, height: 224)
         let navController = UINavigationController(rootViewController: controller)
         
         return navController
