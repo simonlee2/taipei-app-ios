@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
         <array key="NotoSansCJKtc-DemiLight.otf">
             <string>NotoSansCJKtc-DemiLight</string>
         </array>
@@ -107,56 +110,120 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-oZ-5JW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-oZ-5JW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ratingCell" id="jlv-Ks-Qrx" customClass="RatingTableViewCell" customModule="taipei_app" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jlv-Ks-Qrx" id="BDy-oZ-q6t">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-1y-EG0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eWM-1y-EG0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYn-nL-xtE">
-                                                            <rect key="frame" x="157.5" y="0.0" width="60" height="22.5"/>
-                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通常有位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASP-6k-DLq">
-                                                            <rect key="frame" x="157.5" y="27.5" width="60" height="22.5"/>
-                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安靜程度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3F-ih-9TD">
-                                                            <rect key="frame" x="157.5" y="55" width="60" height="22.5"/>
-                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡好喝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKx-rW-x4y">
-                                                            <rect key="frame" x="157.5" y="82" width="60" height="22.5"/>
-                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="價格便宜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd3-E3-gs4">
-                                                            <rect key="frame" x="157.5" y="109.5" width="60" height="22.5"/>
-                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有插座" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEX-OQ-icT">
-                                                            <rect key="frame" x="165" y="137" width="45" height="22.5"/>
-                                                            <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="ctr-lP-yX4">
+                                                            <rect key="frame" x="25" y="0.0" width="325" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYn-nL-xtE">
+                                                                    <rect key="frame" x="0.0" y="8.5" width="60" height="22.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="22.5" id="wYq-sD-LvP"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWo-Zx-yZ0" customClass="CosmosView" customModule="Cosmos">
+                                                                    <rect key="frame" x="210" y="8.5" width="115" height="22.5"/>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="RWo-Zx-yZ0" firstAttribute="height" secondItem="nYn-nL-xtE" secondAttribute="height" id="dxJ-a3-oEI"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="aCv-dt-JHh">
+                                                            <rect key="frame" x="25" y="40" width="325" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKf-zk-OSU">
+                                                                    <rect key="frame" x="0.0" y="8.5" width="60" height="22.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="22.5" id="M43-tm-9gr"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbM-Fk-cnO" customClass="CosmosView" customModule="Cosmos">
+                                                                    <rect key="frame" x="210" y="8.5" width="115" height="22.5"/>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="DbM-Fk-cnO" firstAttribute="height" secondItem="JKf-zk-OSU" secondAttribute="height" id="Whq-hu-Mhw"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="MXm-8U-TPp">
+                                                            <rect key="frame" x="25" y="80" width="325" height="39.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkq-id-eB4">
+                                                                    <rect key="frame" x="0.0" y="8.5" width="60" height="22.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="22.5" id="3Hr-ZW-c5W"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPz-gz-fkJ" customClass="CosmosView" customModule="Cosmos">
+                                                                    <rect key="frame" x="210" y="8.5" width="115" height="22.5"/>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="LPz-gz-fkJ" firstAttribute="height" secondItem="Dkq-id-eB4" secondAttribute="height" id="XLZ-V9-bND"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="xAL-34-eei">
+                                                            <rect key="frame" x="25" y="119.5" width="325" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHt-Xg-Yo6">
+                                                                    <rect key="frame" x="0.0" y="9" width="60" height="22.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="22.5" id="yZS-8h-Y2u"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpy-KH-iIx" customClass="CosmosView" customModule="Cosmos">
+                                                                    <rect key="frame" x="210" y="9" width="115" height="22.5"/>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Kpy-KH-iIx" firstAttribute="height" secondItem="wHt-Xg-Yo6" secondAttribute="height" id="Mjk-Ja-WBP"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-Ld-EHV">
+                                                            <rect key="frame" x="25" y="159.5" width="325" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeg-s6-Mnu">
+                                                                    <rect key="frame" x="0.0" y="9" width="60" height="22.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="22.5" id="iF8-6g-ZEf"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="NotoSansCJKtc-DemiLight" family="Noto Sans CJK TC" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ChO-Md-7fc" customClass="CosmosView" customModule="Cosmos">
+                                                                    <rect key="frame" x="210" y="9" width="115" height="22.5"/>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="ChO-Md-7fc" firstAttribute="height" secondItem="Aeg-s6-Mnu" secondAttribute="height" id="TO6-J6-n5i"/>
+                                                            </constraints>
+                                                        </stackView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
@@ -192,7 +259,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E6O-iD-OBw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5K0-2O-rk1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5K0-2O-rk1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
