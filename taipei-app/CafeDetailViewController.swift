@@ -28,6 +28,9 @@ extension CafeDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ratingCell = tableView.dequeueReusableCell(withIdentifier: "ratingCell", for: indexPath) as! RatingTableViewCell
+        if let annotation = annotation {
+            ratingCell.viewModel = CafeRatingCellViewModel(annotation)
+        }
         
         return ratingCell
     }

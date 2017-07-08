@@ -147,8 +147,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="aCv-dt-JHh">
                                                             <rect key="frame" x="25" y="40" width="325" height="40"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKf-zk-OSU">
-                                                                    <rect key="frame" x="0.0" y="8.5" width="60" height="22.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="通常有位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKf-zk-OSU">
+                                                                    <rect key="frame" x="0.0" y="8.5" width="60" height="23"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="22.5" id="M43-tm-9gr"/>
                                                                     </constraints>
@@ -167,8 +167,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="MXm-8U-TPp">
                                                             <rect key="frame" x="25" y="80" width="325" height="39.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkq-id-eB4">
-                                                                    <rect key="frame" x="0.0" y="8.5" width="60" height="22.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="咖啡好喝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkq-id-eB4">
+                                                                    <rect key="frame" x="0.0" y="8.5" width="60" height="23"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="22.5" id="3Hr-ZW-c5W"/>
                                                                     </constraints>
@@ -187,8 +187,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="xAL-34-eei">
                                                             <rect key="frame" x="25" y="119.5" width="325" height="40"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHt-Xg-Yo6">
-                                                                    <rect key="frame" x="0.0" y="9" width="60" height="22.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="安靜程度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHt-Xg-Yo6">
+                                                                    <rect key="frame" x="0.0" y="8.5" width="60" height="23"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="22.5" id="yZS-8h-Y2u"/>
                                                                     </constraints>
@@ -207,8 +207,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-Ld-EHV">
                                                             <rect key="frame" x="25" y="159.5" width="325" height="40"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="網路穩定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeg-s6-Mnu">
-                                                                    <rect key="frame" x="0.0" y="9" width="60" height="22.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="價格便宜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeg-s6-Mnu">
+                                                                    <rect key="frame" x="0.0" y="8.5" width="60" height="23"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="22.5" id="iF8-6g-ZEf"/>
                                                                     </constraints>
@@ -234,6 +234,13 @@
                                                 <constraint firstAttribute="trailing" secondItem="eWM-1y-EG0" secondAttribute="trailing" id="znk-02-DcN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="availabilityRating" destination="DbM-Fk-cnO" id="BZ5-ah-pCq"/>
+                                            <outlet property="coffeeRating" destination="LPz-gz-fkJ" id="M9E-J9-ad8"/>
+                                            <outlet property="priceRating" destination="ChO-Md-7fc" id="4g5-X1-2Zb"/>
+                                            <outlet property="quietnessRating" destination="Kpy-KH-iIx" id="MI9-vB-Xt6"/>
+                                            <outlet property="wifiRating" destination="RWo-Zx-yZ0" id="j1v-1R-lqW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
