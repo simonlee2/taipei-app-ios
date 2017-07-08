@@ -24,6 +24,7 @@ struct Cafe {
     let address: String
     let coordinate: CLLocationCoordinate2D
     
+    let cheap: Double
     let music: Double
     let socket: SocketAvailability
     let quiet: Double
@@ -47,6 +48,7 @@ extension Cafe {
         self.name = properties["name"].stringValue
         self.address = properties["address"].stringValue
         self.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+        self.cheap = properties["cheap"].doubleValue
         self.music = properties["music"].doubleValue
         self.socket = SocketAvailability(rawValue: properties["socket"].stringValue) ?? .maybe
         self.quiet = properties["quiet"].doubleValue
@@ -74,6 +76,7 @@ class CafeAnnotation: NSObject, MGLAnnotation {
     let address: String
     let coordinate: CLLocationCoordinate2D
     
+    let cheap : Double
     let music: Double
     let socket: SocketAvailability
     let quiet: Double
@@ -90,6 +93,7 @@ class CafeAnnotation: NSObject, MGLAnnotation {
         self.name = cafe.name
         self.address = cafe.address
         self.coordinate = cafe.coordinate
+        self.cheap = cafe.cheap
         self.music = cafe.music
         self.socket = cafe.socket
         self.quiet = cafe.quiet
