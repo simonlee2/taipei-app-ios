@@ -2,5 +2,5 @@ github "Alamofire/Alamofire" ~> 4.4
 github "SwiftyJSON/SwiftyJSON"
 github "mxcl/PromiseKit" ~> 4.0
 github "PromiseKit/Alamofire-" ~> 1.0
-github "marketplacer/Cosmos" ~> 10.0
+github "marketplacer/Cosmos" "swift-4.0"
 binary "https://www.mapbox.com/ios-sdk/Mapbox-iOS-SDK.json" ~> 3.5

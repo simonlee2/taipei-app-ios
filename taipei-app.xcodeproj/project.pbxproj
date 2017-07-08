@@ -21,6 +21,7 @@
 		F460CE941EB30964008D157E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE911EB30964008D157E /* Alamofire.framework */; };
 		F460CE951EB30964008D157E /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE921EB30964008D157E /* PromiseKit.framework */; };
 		F460CE961EB30964008D157E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460CE931EB30964008D157E /* SwiftyJSON.framework */; };
+		F49087F71F0666780006460C /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49087F61F0664670006460C /* Cosmos.framework */; };
 		F4B0FA0D1F00F783006F2B7B /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0F9FC1F00F783006F2B7B /* NotoSans-Bold.ttf */; };
 		F4B0FA0E1F00F783006F2B7B /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0F9FD1F00F783006F2B7B /* NotoSans-BoldItalic.ttf */; };
 		F4B0FA0F1F00F783006F2B7B /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B0F9FE1F00F783006F2B7B /* NotoSans-Italic.ttf */; };
@@ -81,6 +82,7 @@
 		F460CE911EB30964008D157E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F460CE921EB30964008D157E /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		F460CE931EB30964008D157E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		F49087F61F0664670006460C /* Cosmos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cosmos.framework; path = Carthage/Build/iOS/Cosmos.framework; sourceTree = "<group>"; };
 		F4B0F9FC1F00F783006F2B7B /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Bold.ttf"; path = "Resources/NotoSans-unhinted/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		F4B0F9FD1F00F783006F2B7B /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-BoldItalic.ttf"; path = "Resources/NotoSans-unhinted/NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		F4B0F9FE1F00F783006F2B7B /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Italic.ttf"; path = "Resources/NotoSans-unhinted/NotoSans-Italic.ttf"; sourceTree = "<group>"; };
@@ -109,8 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41430B31EB6DD3900BB9864 /* PMKAlamofire.framework in Frameworks */,
+				F49087F71F0666780006460C /* Cosmos.framework in Frameworks */,
 				F41430B11EB599E300BB9864 /* Mapbox.framework in Frameworks */,
+				F41430B31EB6DD3900BB9864 /* PMKAlamofire.framework in Frameworks */,
 				F460CE941EB30964008D157E /* Alamofire.framework in Frameworks */,
 				F460CE951EB30964008D157E /* PromiseKit.framework in Frameworks */,
 				F460CE961EB30964008D157E /* SwiftyJSON.framework in Frameworks */,
@@ -196,6 +199,7 @@
 		F460CE901EB30963008D157E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F49087F61F0664670006460C /* Cosmos.framework */,
 				F41430B21EB6DD3900BB9864 /* PMKAlamofire.framework */,
 				F41430B01EB599E300BB9864 /* Mapbox.framework */,
 				F460CE911EB30964008D157E /* Alamofire.framework */,
@@ -397,6 +401,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PMKAlamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Cosmos.framework",
 			);
 			name = Carthage;
 			outputPaths = (
