@@ -16,30 +16,36 @@ public class API {
     
     public enum Endpoints {
         case cafes(String?, String?, String?)
+        case bounds(String?, String?)
         
         public var method: Alamofire.HTTPMethod {
             switch self {
-            case .cafes:
+            case .cafes, .bounds:
                 return Alamofire.HTTPMethod.get
             }
         }
         
         public var path: String {
             switch self {
-            case .cafes:
+            case .cafes, .bounds:
                 return "\(baseURL)/cafes"
             }
         }
         
         public var parameters: [String : Any] {
-            var parameters = ["format":"json"]
+            var parameters: [String: String] = [:]
             switch self {
             case .cafes(let location, let radius, let limit):
                 parameters["location"] = location
                 parameters["radius"] = radius
                 parameters["limit"] = limit
                 break
+            case .bounds(let sw, let ne):
+                parameters["sw"] = sw
+                parameters["ne"] = ne
+                break
             }
+            
             return parameters
         }
     }
