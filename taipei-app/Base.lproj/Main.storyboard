@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E6O-iD-OBw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E6O-iD-OBw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,11 +31,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kl-ef-FdD">
-                                <rect key="frame" x="306" y="548" width="32" height="32"/>
+                                <rect key="frame" x="306" y="548" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="AXx-VV-Oxh"/>
-                                    <constraint firstAttribute="width" constant="32" id="Dff-5Z-vgt"/>
+                                    <constraint firstAttribute="height" constant="44" id="AXx-VV-Oxh"/>
+                                    <constraint firstAttribute="width" constant="44" id="Dff-5Z-vgt"/>
                                 </constraints>
                                 <state key="normal" image="location"/>
                                 <connections>
@@ -64,13 +64,34 @@
                                     <constraint firstAttribute="bottom" secondItem="qet-Kl-asP" secondAttribute="bottom" id="roI-z5-ZXX"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwv-BJ-qe6">
+                                <rect key="frame" x="125" y="548" width="124" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfW-C0-umC">
+                                        <rect key="frame" x="8" y="7" width="108" height="30"/>
+                                        <state key="normal" title="Search the area"/>
+                                        <connections>
+                                            <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wES-Y4-YGO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mfW-C0-umC" secondAttribute="trailing" constant="8" id="R65-jI-edL"/>
+                                    <constraint firstItem="mfW-C0-umC" firstAttribute="leading" secondItem="pwv-BJ-qe6" secondAttribute="leading" constant="8" id="hhv-JI-yjw"/>
+                                    <constraint firstItem="mfW-C0-umC" firstAttribute="top" secondItem="pwv-BJ-qe6" secondAttribute="top" constant="7" id="i6G-iA-5aY"/>
+                                    <constraint firstAttribute="bottom" secondItem="mfW-C0-umC" secondAttribute="bottom" constant="7" id="phP-yB-feC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="04y-zn-V7G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72G-fq-LGc"/>
+                            <constraint firstItem="pwv-BJ-qe6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BX5-PG-A5Y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Kl-ef-FdD" secondAttribute="bottom" constant="75" id="Ukh-5a-TfX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mfW-C0-umC" secondAttribute="bottom" constant="82" id="Va5-3G-UvD"/>
                             <constraint firstItem="04y-zn-V7G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="qv2-tV-47D"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Kl-ef-FdD" secondAttribute="bottom" constant="87" id="rF9-4g-RIz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1Kl-ef-FdD" secondAttribute="trailing" constant="21" id="tCu-AZ-NTh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Kl-ef-FdD" secondAttribute="trailing" constant="9" id="tCu-AZ-NTh"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="zoomLevel">
@@ -91,12 +112,14 @@
                     <connections>
                         <outlet property="currentLocationButton" destination="1Kl-ef-FdD" id="7ho-Wf-VGs"/>
                         <outlet property="mapView" destination="8bC-Xf-vdC" id="UwJ-jB-Puh"/>
+                        <outlet property="searchButton" destination="mfW-C0-umC" id="uw8-d6-GzL"/>
+                        <outlet property="searchView" destination="pwv-BJ-qe6" id="jtR-CA-2vm"/>
                         <segue destination="SvZ-vR-yqW" kind="show" id="E3Y-8a-Xzi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="38"/>
+            <point key="canvasLocation" x="965.60000000000002" y="37.331334332833585"/>
         </scene>
         <!--Cafe Detail View Controller-->
         <scene sceneID="f7d-KZ-EEY">

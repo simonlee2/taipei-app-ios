@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     var mapFinishedLoading = false
     
     @IBOutlet var mapView: MGLMapView!
+    @IBOutlet weak var searchView: UIView!
+    @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var currentLocationButton: UIButton!
     var initialUserLocation: MGLUserLocation?
 
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         mapView.delegate = self
+        searchView.alpha = 0.0
     }
     
     func addAnnotations(location: String?, radius: String?, limit: String?) {
@@ -80,6 +83,12 @@ class ViewController: UIViewController {
         mapView.setCenter(userLocation.coordinate, zoomLevel: 14, animated: true)
         searchByBounds()
     }
+    @IBAction func searchButtonPressed(_ sender: Any) {
+        UIView.animate(withDuration: 0.3) { [unowned self] in
+            self.searchView.alpha = 0.0
+        }
+        searchByBounds()
+    }
 }
 
 extension ViewController: MGLMapViewDelegate {
@@ -129,7 +138,11 @@ extension ViewController: MGLMapViewDelegate {
     }
     
     func mapView(_ mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
-        searchByBounds()
+        guard mapFinishedLoading else { return }
+        
+        UIView.animate(withDuration: 1.0) { [unowned self] in
+            self.searchView.alpha = 1.0
+        }
     }
     
     func mapViewWillStartLoadingMap(_ mapView: MGLMapView) {
@@ -138,6 +151,7 @@ extension ViewController: MGLMapViewDelegate {
     
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
         mapFinishedLoading = true
+        searchByBounds()
     }
 }
 
