@@ -60,29 +60,25 @@ class ViewController: UIViewController {
         return features.arrayValue.map({Cafe(fromJSON: $0)})
     }
     
-    func setCenterAndSearch(mapView: MGLMapView, userLocation: MGLUserLocation, zoomLevel: Double, radius: String?, limit: String?, animated: Bool) {
-        mapView.setCenter(userLocation.coordinate, zoomLevel: zoomLevel, animated: animated)
-        
+    func searchByBounds() {
         guard mapFinishedLoading else { return }
-     
+        
         if let annotations = mapView.annotations {
             mapView.removeAnnotations(annotations)
         }
-        let bounds = mapView.visibleCoordinateBounds
         
+        let bounds = mapView.visibleCoordinateBounds
         let swString: String = "@\(bounds.sw.latitude),\(bounds.sw.longitude)"
         let neString: String = "@\(bounds.ne.latitude),\(bounds.ne.longitude)"
         
-//        let locationString = "@\(userLocation.coordinate.latitude),\(userLocation.coordinate.longitude)"
-        
-//        addAnnotations(location: locationString, radius: "600", limit: nil)
         addAnnotationByBounds(sw: swString, ne: neString)
     }
     
     @IBAction func currentLocationButtonPressed(_ sender: Any) {
         guard let userLocation = mapView.userLocation else { return }
         
-        setCenterAndSearch(mapView: mapView, userLocation: userLocation, zoomLevel: 14, radius: "600", limit: nil, animated: true)
+        mapView.setCenter(userLocation.coordinate, zoomLevel: 14, animated: true)
+        searchByBounds()
     }
 }
 
@@ -115,6 +111,7 @@ extension ViewController: MGLMapViewDelegate {
         if initialUserLocation == nil {
             guard let userLocation = userLocation else { return }
             initialUserLocation = userLocation
+            
             mapView.setCenter(userLocation.coordinate, zoomLevel: 14, animated: true)
         }
     }
@@ -132,17 +129,7 @@ extension ViewController: MGLMapViewDelegate {
     }
     
     func mapView(_ mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
-        if mapFinishedLoading {
-            if let annotations = mapView.annotations {
-                mapView.removeAnnotations(annotations)
-            }
-            
-            let bounds = mapView.visibleCoordinateBounds
-            let swString: String = "@\(bounds.sw.latitude),\(bounds.sw.longitude)"
-            let neString: String = "@\(bounds.ne.latitude),\(bounds.ne.longitude)"
-            
-            addAnnotationByBounds(sw: swString, ne: neString)
-        }
+        searchByBounds()
     }
     
     func mapViewWillStartLoadingMap(_ mapView: MGLMapView) {
@@ -151,8 +138,6 @@ extension ViewController: MGLMapViewDelegate {
     
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
         mapFinishedLoading = true
-        guard let userLocation = mapView.userLocation else { return }
-        setCenterAndSearch(mapView: mapView, userLocation: userLocation, zoomLevel: 14, radius: "600", limit: nil, animated: true)
     }
 }
 
