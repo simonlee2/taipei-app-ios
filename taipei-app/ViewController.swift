@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var currentLocationButton: UIButton!
     var initialUserLocation: MGLUserLocation?
+    let queue = DispatchQueue(label: "background")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,12 +48,12 @@ class ViewController: UIViewController {
         API.request(endpoint: .bounds(sw, ne))
             .responseJSON()
             .then { JSON($0) }
-            .then { json in
+            .then(on: queue) { [unowned self] json in
                 self.processGeoJSON(json: json)
-            }.then { cafes in
+            }.then(on: queue) { cafes in
                 cafes.map({CafeAnnotation(withCafe: $0)})
-            }.then { annotations in
-                annotations.forEach({self.mapView.addAnnotation($0)})
+            }.then { [unowned self] annotations in
+                self.mapView.addAnnotations(annotations)
             }.catch { error in
                 print(error)
         }
