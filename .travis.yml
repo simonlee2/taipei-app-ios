@@ -2,7 +2,7 @@ language: objective-c
 xcode_project: taipei-app.xcodeproj
 xcode_scheme: taipei-app
 xcode_sdk: iphonesimulator10.3
-osx_image: xcode8.3
+osx_image: xcode9.0
 
 before_install:
   - gem update fastlane --no-ri --no-rdoc --no-document
