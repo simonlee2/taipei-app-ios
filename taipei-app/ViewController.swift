@@ -36,6 +36,9 @@ class ViewController: UIViewController {
         
         let singleTap = UITapGestureRecognizer(target: self, action:#selector(handleSingleTap))
         mapView.addGestureRecognizer(singleTap)
+        mapView.gestureRecognizers?.forEach { recognizer in
+            singleTap.require(toFail: recognizer)
+        }
     }
     
     func handleSingleTap() {
