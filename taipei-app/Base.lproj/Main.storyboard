@@ -42,8 +42,8 @@
                                     <action selector="currentLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8lR-ix-aKq"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04y-zn-V7G">
-                                <rect key="frame" x="37" y="103" width="300" height="60"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04y-zn-V7G">
+                                <rect key="frame" x="37" y="84" width="300" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qet-Kl-asP">
                                         <rect key="frame" x="20" y="0.0" width="260" height="60"/>
@@ -52,7 +52,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,7 +90,7 @@
                             <constraint firstItem="pwv-BJ-qe6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BX5-PG-A5Y"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Kl-ef-FdD" secondAttribute="bottom" constant="75" id="Ukh-5a-TfX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mfW-C0-umC" secondAttribute="bottom" constant="82" id="Va5-3G-UvD"/>
-                            <constraint firstItem="04y-zn-V7G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="qv2-tV-47D"/>
+                            <constraint firstItem="04y-zn-V7G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="qv2-tV-47D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Kl-ef-FdD" secondAttribute="trailing" constant="9" id="tCu-AZ-NTh"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -113,6 +113,7 @@
                         <outlet property="currentLocationButton" destination="1Kl-ef-FdD" id="7ho-Wf-VGs"/>
                         <outlet property="mapView" destination="8bC-Xf-vdC" id="UwJ-jB-Puh"/>
                         <outlet property="searchButton" destination="mfW-C0-umC" id="uw8-d6-GzL"/>
+                        <outlet property="searchField" destination="qet-Kl-asP" id="RFM-Kw-lS6"/>
                         <outlet property="searchView" destination="pwv-BJ-qe6" id="jtR-CA-2vm"/>
                         <segue destination="SvZ-vR-yqW" kind="show" id="E3Y-8a-Xzi"/>
                     </connections>

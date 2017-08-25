@@ -19,6 +19,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var currentLocationButton: UIButton!
+    @IBOutlet weak var searchField: UITextField! {
+        didSet {
+            searchField.delegate = self
+        }
+    }
+    
     var initialUserLocation: MGLUserLocation?
     let queue = DispatchQueue(label: "background")
 
@@ -27,6 +33,13 @@ class ViewController: UIViewController {
         
         mapView.delegate = self
         searchView.alpha = 0.0
+        
+        let singleTap = UITapGestureRecognizer(target: self, action:#selector(handleSingleTap))
+        mapView.addGestureRecognizer(singleTap)
+    }
+    
+    func handleSingleTap() {
+        mapView.endEditing(true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -204,5 +217,12 @@ extension ViewController: UIViewControllerPreviewingDelegate {
         guard let annotation = annotation as? CafeAnnotation else { return nil }
         controller.annotation = annotation
         return controller
+    }
+}
+
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
